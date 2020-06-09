@@ -11,6 +11,7 @@ public class Meal {
     private final int calories;
     private int id;
 
+
     public int getId() {
         return id;
     }

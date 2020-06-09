@@ -16,6 +16,7 @@ public class MealRepositoryImpl implements MealRepository<Meal> {
  private final Map<Integer, Meal> map = new ConcurrentHashMap<>();
  private final AtomicInteger newId = new AtomicInteger(1);
 
+
  public MealRepositoryImpl() {
   add(new Meal(1, LocalDateTime.of(2020, Month.JANUARY, 30, 10, 0), "Завтрак", 500));
   add(new Meal(2, LocalDateTime.of(2020, Month.JANUARY, 30, 13, 0), "Обед", 1000));
