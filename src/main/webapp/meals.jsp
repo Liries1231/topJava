@@ -31,13 +31,15 @@
 
             <td><c:out value="${meal.calories}"/></td>
             <td>
-                <a href="meals.jsp?id=<c:out value='${count}' />">Delete</a>
+            <a href="meals?action=edit&id=${meal.id}">Update</a>
+            <a href="meals?action=delete&id=${meal.id}">Delete</a>
             </td>
         </tr>
 
     </c:forEach>
     </tbody>
 </table>
+<p><a href="meals?action=insert">Add Meal</a></p>
 </body>
 
 
