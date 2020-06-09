@@ -6,6 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<html lang="ru">
 <head>
     <title>Meal Edit/Insert</title>
 </head>
@@ -14,7 +17,7 @@
     <input hidden type="number" name="id" size="70" value="${meal.id}"/>
     Description : <input
         type="text" name="description" size="70"
-                         value="${meal.description}"/> <br/>
+        value="${meal.description}"/> <br/>
     Date and Time : <input
         type="datetime-local" name="dateTime"
         value="${meal.dateTime}"/> <br/>

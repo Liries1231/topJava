@@ -46,7 +46,7 @@ public class MealRepositoryImpl implements MealRepository<Meal> {
 
  @Override
  public void update(int id, Meal meal) {
-  map.putIfAbsent(id, meal);
+  map.put(id, meal);
 
  }
 

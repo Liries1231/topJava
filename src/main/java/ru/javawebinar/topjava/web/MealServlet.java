@@ -78,7 +78,7 @@ public class MealServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         dao.delete(id);
         log.debug("deleted = {}", id);
-        response.sendRedirect("meals");
+        response.sendRedirect(LIST_MEALS);
         break;
       }
       case "edit": {
