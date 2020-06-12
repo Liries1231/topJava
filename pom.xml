@@ -17,6 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <logback.version>1.2.3</logback.version>
         <slf4j.version>1.7.30</slf4j.version>
+        <spring.version>5.2.6.RELEASE</spring.version>
     </properties>
 
     <build>
@@ -54,12 +55,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${slf4j.version}</version>
-            <scope>runtime</scope>
-        </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -76,6 +71,11 @@
 
 
         </dependency>
+        <dependency>
+                     <groupId>org.springframework</groupId>
+                      <artifactId>spring-context</artifactId>
+                      <version>${spring.version}</version>
+                  </dependency>
 
 
     </dependencies>
