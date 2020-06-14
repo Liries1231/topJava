@@ -10,7 +10,15 @@ public class Meal extends AbstractBaseEntity {
 
     private final int calories;
     private int id;
+    private int userId;
 
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
     public Integer getId() {
         return id;

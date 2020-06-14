@@ -32,6 +32,7 @@ public class MealTo {
         this.excess = excess;
     }
 
+
     public MealTo(Meal userMeal, boolean excess) {
         this.id = userMeal.getId();
         this.dateTime = userMeal.getDateTime();
